@@ -11,12 +11,29 @@
     <script>
 
         function showtext(){
+
+            var vardas = document.getElementById("vardas").value ;
+            var pavarde = document.getElementById("pavarde").value ;
+
+            var kreipinys = pakeisti_teksta(vardas);
+
+            console.log("labas " +kreipinys);
+
+
+            var t = "labas rytas " + vardas + " " + pavarde + "!";
           
-            var t = document.getElementById("vardas").value ;
-            t = "labas rytas " + t;
+           
+          
             document.getElementById("result").innerHTML = t;
 
-            
+        }
+
+        function pakeisti_teksta(tekstas){
+
+            var x = tekstas + "ai";
+            x = x + ":)";
+            x = x + "Ketvirtadienis";
+            return x;
 
 
         }
@@ -27,10 +44,17 @@
 
 <body>
 
-    <button id="btn" onclick="showtext()">calculate</button>
+    <button id="btn" onclick="showtext()">Go</button>
 
     <div>
-        <input type="text" id="vardas"/>
+        Vardas:
+        <input type="text" id="vardas" placeholder="iveskite varda"/>   
+    </div>
+
+    <div>
+        Pavarde:
+        <input type="text" id="pavarde" placeholder="pavarde"/> 
+
     </div>
 
     <div id="result">
