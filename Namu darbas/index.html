@@ -12,6 +12,38 @@
         crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/style.css"/>
 	<script>
+        function cal(){
+
+            // 1.Gauti rezultata
+            var pinigas = document.getElementById("pinigas").value;
+        
+           //VEIKIA console.log(unit);
+
+            // 2.Nustatyti kokios valiutos pinigus konvertuosime
+            var unit = document.getElementById("unit").value;
+            // VEIKIA console.log(unit);
+
+            // 3.Atspasdinti viska y ekrana
+            var rez = 0;
+            if(unit == "DKK"){
+              rez = pinigas * 7.44 + " DKK";
+            }else if(unit == "USD"){
+               rez = pinigas * 1.22 + " USD";
+            }else if(unit == "GBP"){
+               rez = pinigas * 0.88 + " GBP";
+            }
+
+            
+
+            document.getElementById("rezultatas").value = rez;
+           
+
+
+
+        }
+        
+
+
 		
 	</script>
 </head>
@@ -24,7 +56,7 @@
                     Valiutu Skaiciuokle:
                     <div>
                         Pinigai:
-                        <input type="text" class="form-control" id="pinigas" placeholder="valiuta...">
+                        <input type="text" class="form-control" id="pinigas" placeholder="valiuta EU...">
                     </div>
                     <div>
                         Rezultatas:
@@ -32,21 +64,18 @@
                     </div>
                           Pasirinkite norima valiuta:
                     <div class="form-group"> 
-                        <select id="Unit">
+                        <select id="unit">
                             <option value="DKK"> DK </option>
                             <option value="USD"> USD </option>
                             <option value="GBP"> GBP </option>
-                             <option value="EU"> EU </option> 
+                            
                         </select>
                      </div>
                      <div>
                         <button type="button" class="btn btn-primary" onclick="cal()">Apskaiciuoti</button>
                      </div>
                 </div>
-
             </div>
-
-
         </div>
 		
 	</div>
