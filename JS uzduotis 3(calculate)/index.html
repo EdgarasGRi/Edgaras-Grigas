@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Js uzduotis basic match</title>
+
+
+    <script>
+
+        function Sum(){
+
+            var a_text = document.getElementById("nr1").value;
+            var b_text = document.getElementById("nr2").value;
+
+            // grazina skaiciu integer
+           var a = parseInt(a_text);
+           var b = parseInt(b_text);
+
+            var c = a + b;
+
+            document.getElementById("result").value = c;
+        }
+
+
+
+    </script>
+    
+</head>
+
+<body>
+    <div >
+        <input type="text" id="nr1" /> + <input type="text" id="nr2" /> = <input type="text" id="result" />
+        
+    </div>
+
+    <div>
+        <button id="Sum" onclick="Sum()">Sum</button>
+
+    </div>
+
+    
+ 
+</body>
+
+</html>
