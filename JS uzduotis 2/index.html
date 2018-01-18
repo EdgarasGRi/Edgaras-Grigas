@@ -3,13 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Scientists</title>
+    <title>JS uzduotis</title>
     
+   
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <script>
+
+        function showtext(){
+          
+            var t = document.getElementById("vardas").value ;
+            t = "labas rytas " + t;
+            document.getElementById("result").innerHTML = t;
+
+            
+
+
+        }
+
+    
+    </script>
 </head>
 
 <body>
-    <h1>JS Cheat sheet</h1>
 
+    <button id="btn" onclick="showtext()">calculate</button>
+
+    <div>
+        <input type="text" id="vardas"/>
+    </div>
+
+    <div id="result">
+
+    </div>
     
  
 </body>
