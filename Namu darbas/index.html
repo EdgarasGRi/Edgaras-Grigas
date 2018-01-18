@@ -21,19 +21,40 @@
 
             // 2.Nustatyti kokios valiutos pinigus konvertuosime
             var unit = document.getElementById("unit").value;
+            var unit1 = document.getElementById("unit1").value;
+            
+
             // VEIKIA console.log(unit);
 
             // 3.Atspasdinti viska y ekrana
             var rez = 0;
-            if(unit == "DKK"){
-              rez = pinigas * 7.44 + " DKK";
-            }else if(unit == "USD"){
-               rez = pinigas * 1.22 + " USD";
-            }else if(unit == "GBP"){
-               rez = pinigas * 0.88 + " GBP";
+            if(unit1 == "DKK" && unit == "USD" ){
+              rez = pinigas * 0.16 + " USD";
+            }else if( unit1 == "DKK" && unit == "GBP"){
+                rez = pinigas * 0.11 + " GBP";
+            } else if( unit1 == "USD" && unit == "GBP"){
+                rez = pinigas * 0.71 + " GBP";
+            }else if( unit1 == "GBP" && unit == "DKK"){
+                rez = pinigas * 8.45 + " DKK";
+            }else if( unit1 == "GBP" && unit == "USD"){
+                rez = pinigas * 1.38 + " USD";
+            }else if( unit1 == "USD" && unit == "DKK"){
+                rez = pinigas *6.08 + " DKK"; 
+            }else if( unit1 == "EU" && unit == "DKK"){
+                rez = pinigas *7.44 + " DKK";
+            }else if( unit1 == "EU" && unit == "USD"){
+                rez = pinigas * 1.22 + " USD";
+            }else if( unit1 == "EU" && unit == "GBP"){
+                rez = pinigas * 1.13 + " GBP";
+            }else if( unit1 == "DKK" && unit == "EU"){
+                rez = pinigas * 0.13 + " EU";
+            }else if( unit1 == "USD" && unit == "EU"){
+                rez = pinigas * 0.81 + " EU";
+            }else if( unit1 == "GBP" && unit == "EU"){
+                rez = pinigas * 1.13 + " EU";
             }
 
-            
+        
 
             document.getElementById("rezultatas").value = rez;
            
@@ -71,8 +92,18 @@
                 <div id="stilius">
                     
                     <div>
-                        Pinigai:
+                        Iveskite pinigus:
                         <input type="text" class="form-control" id="pinigas" placeholder="valiuta EU...">
+                    </div>
+                         Pasirinkite norima valiuta:
+                    <div class="form-group"> 
+                            <select id="unit1">
+                                <option value="DKK"> DK </option>
+                                <option value="USD"> USD </option>
+                                <option value="GBP"> GBP </option>
+                                <option value="EU"> EU </option>
+                                
+                            </select>
                     </div>
                     <div>
                         Rezultatas:
@@ -84,6 +115,7 @@
                             <option value="DKK"> DK </option>
                             <option value="USD"> USD </option>
                             <option value="GBP"> GBP </option>
+                            <option value="EU"> EU </option>
                             
                         </select>
                      </div>
