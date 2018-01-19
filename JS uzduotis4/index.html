@@ -2,17 +2,88 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
-    crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
-    crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/style.css"/>
     <title>Scientists</title>
-    
 </head>
 
+
+    <script>
+        function Calc() {
+            //1 Gauti viena zodzio reiksme
+             var zodis1 = document.getElementById("zodis1").value;
+             // PAVYKO console.log(zodis1);
+
+             //2 Gauti antra zodzio reiksme
+             var zodis2 = document.getElementById("zodis2").value;
+             // PAVYKO console.log(zodis2);
+
+            //3 palyginti zodzius
+            if (zodis1.toLowerCase() == zodis2.toLowerCase() ){
+
+                document.getElementById("result").value= "Jusu zodziai yra teisingi";
+            }else
+
+                document.getElementById("result").value= "BLOGAI zodziai nesutampa";
+
+            }
+
+
+            // isvesti rezultata
+    
+
+       
+
+      
+    
+    
+    </script>
+
 <body>
-    <h1></h1>
+        
+    
+   
+            <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div id="app">				
+                                <div class="row"> 
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <div class="fonas">
+                                                
+                                                <label for="result">Antras zodis:</label>
+                                                
+                                            </div>
+                                            <input type="text" class="form-control" id="zodis1" placeholder="pirmas zodis....">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                                <div class="fonas">
+                                            <label for="result">Antras zodis:</label>
+                                            </div>
+                                            <input type="text" class="form-control" id="zodis2" placeholder="antas zodis">
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <button id="calc" class="btn btn-success" onclick="Calc()" >Palyginti</button>
+                                </div>
+                                
+                                    <input type="text" class="form-control" id="result" placeholder="Rezultatas ...">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
     
  
