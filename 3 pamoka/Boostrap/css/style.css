@@ -1,0 +1,24 @@
+.stilius{
+    background: red;
+    margin-top: 10px;
+}
+
+.plugin{
+    height: 100px;
+    background:green;
+}
+
+.plugin p{
+    color: white;
+    text-align: center;
+}
+
+.stilius2{
+    border: 2px solid black;
+    width: 500px;
+    height:400px;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+

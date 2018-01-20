@@ -1,0 +1,107 @@
+
+
+header, section{
+    display: block;
+}
+
+h3{
+    margin: 10px;
+    float: left;
+}
+
+#hederis h1{
+    text-align: center;
+}
+
+#pagrindinis{
+    max-width: 900px;
+    margin: 100px auto;
+    border: 1px solid black;
+    display: -webkit-box; /*nurome kad sitoje dezeje bus kitos dezes, */  /*jai  dezeje daugiau nebutu box nereiktu*/
+	-webkit-box-orient: vertical; /*nurodo, kad visos dezes kurios bus sukurtos bus isdestomos vertiklaiai*/
+    -webkit-box-flex: 1;
+    background: yellow;
+}
+
+#informacija h2{
+   margin: 10px;
+   padding: 5px;
+    font: bold 20px verdana;
+}
+
+#Pagr_Info{
+     display: -webkit-box;
+	-webkit-box-orient:horizontal;
+}
+
+#Nuotrauka img{
+    padding: 10px;
+    position: relative;
+    left: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.Ivestis{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#lentele{
+    margin-left: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 80%;
+    
+}
+#lentele th {
+    margin-left: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    
+}
+
+a{
+    margin-left: 10px; 
+}
+
+ul {
+    margin-left: 25px; 
+    padding-bottom: 10px;
+   
+}
+
+li{
+    padding: 5px;
+    float: left;
+}
+
+.fonas{
+    background: black;
+    text-align: right;
+    border-bottom: 3px solid black;
+    padding-top: 5px;
+    background: pink;
+    
+}
+
+#mygtukas{
+    width: 100px;
+   height: 50px;
+    background: green;
+    text-align: center;
+    
+}
+
+#mygtukas p{
+    padding-top: 15px;
+    position: relative;
+   
+}
+
+#mygtukas:hover{
+    background-color:blue;
+    transform: rotate(180deg);
+    transition-duration: 2s;
+}
+ 

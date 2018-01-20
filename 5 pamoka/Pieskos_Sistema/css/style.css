@@ -1,9 +1,9 @@
 #app{
 	
 	background:#fff;
-	border:3px solid #aaa;
+	border:6px solid #aaa;
 	border-radius: 5px;
-    padding:20px;
+    padding:10px;
     border-color: green;
 }
 
@@ -11,16 +11,24 @@ body{
     background-image: url("ekranas.jpg");
 }
 
-.col-lg-4{
-    padding-top: 20px;
+.col-lg-6{
+    padding-top: 10px;
 }
 
 .fonas{
     background: #aaa;
     margin: 5px;
     border-radius: 5px;
-    text-align: center;
+   
     padding-top: 2px;
     border:2px solid green;
+}
+
+.form-control{
+    width: 500px;
+}
+
+.form-group{
+    padding-top: 10px;
 }
 

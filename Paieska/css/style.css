@@ -1,0 +1,18 @@
+body{
+	background:url("../img/grid.png");
+}
+
+#app{
+	border:1px solid #aaa;
+	padding:30px;
+	background:#fff;
+}
+
+.special-font
+{
+	font-family: 'Macondo', cursive;
+}
+
+#result{
+	font-size: 29px;
+}

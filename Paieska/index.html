@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap empty template</title>
+    
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+        crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		
+<link href="https://fonts.googleapis.com/css?family=Macondo" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="css/style.css"/>
+	
+	
+	<script>
+		function change(){	
+		// kadangi input fieldas - turim naudot "value".
+			var t = document.getElementById("text1").value;		// kur keisti	
+			var f1 = document.getElementById("fraze").value;			// ka kaisti
+			var f2 = "testas";	//i ka keisti
+			
+			console.log(t);
+			console.log(f1);
+			console.log(f2);
+			
+			
+			//TODO: Apkeisti fraze musu tekste.
+			var res = "";
+			res = t.replace(f1, f2);
+			console.log(res); // Kodas tikrai veikia iki sycia!
+			
+			//TODO: Atvaizduoti rezultata.
+			document.getElementById("result").innerHTML = res;
+		}
+	</script>
+	
+</head>
+
+<body>
+    <div class="container">
+		<div class="row">
+              
+			<div class="col-lg-6">
+				<div id="app">
+				<div class="form-group">
+					<label for="text1" class="special-font">Tekstas</label>
+					<textarea rows="4" cols="50" type="text" class="form-control" id="text1" placeholder="irasikite savo teksta..."> </textarea>
+				</div>
+				<div class="form-group">
+					<label for="fraze" class="special-font">Fraze</label>
+					<input type="text" class="form-control" id="fraze" placeholder="fraze..." />
+				</div>
+				
+					<div>
+						<button id="mainbutton" class="btn btn-primary btn-xs special-font" onclick="change()">
+						<i class="fa fa-check" aria-hidden="true"></i> Pakeisti</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div id="result" class="special-font">					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
