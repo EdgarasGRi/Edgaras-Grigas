@@ -10,7 +10,7 @@ body{
     opacity: 0.7;
     filter: alpha(opacity=30);
     height: 100px;
-    position: fixed;
+    position: relative;
     top: 0;
     width: 100%;
 
@@ -52,5 +52,13 @@ body{
     padding-top: 9px;
 }
 .bord{
-    border: 1px solid black;
+    border: 2px solid white;
+}
+
+p{
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size:30px;
+    padding-left: 20px;
+
 }
