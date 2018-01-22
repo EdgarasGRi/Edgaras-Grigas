@@ -8,19 +8,16 @@ body{
 
 .remas{
     width: 100%;
-    position: relative;
+    position: fixed;
     height: 130px;
+
+
 }
-.stilius{
-    border: 1px solid white;
-    height: 900px;
-    margin-top: 20px;
-    border-radius: 10px;
-    
-}
+
+
     
 .navbar-inverse{
-    opacity: 0.9;
+    opacity: 0.7;
     filter: alpha(opacity=30);
     position: fixed;
      
@@ -90,36 +87,25 @@ h3{
 
 .navbar-nav>li>.dropdown-menu{
     border-radius: 10px;
-    border: 3px solid white;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    
+    border: 3px solid orange
 }
 
 .dropdown-menu>li>a{
     font-family: 'Courgette', cursive;
     font-size: 16px;
-    color:white;
-    background: #2a2d2b;
+    color:green;
 
 }
 .dropdown-menu>li>a:hover{
-    background:#0f663a;
-    
+    transform: scale(1.1);
 
 }
 
-.app{
-    color: white;
-    font-family: 'Courgette', cursive;
-    text-align: center;
-    border: 1px solid black;
-    font-size: 25px;
-    margin-top: 20px;
-    border-radius: 10px;
-    opacity: 0.8;
-    margin-bottom:10px;
-    background: #2a2d2b;
-
+.menuOffset{
+	height:129px;
 }
 
+#player-table {
+	width:100%;
+	max-width:100%;
+}
