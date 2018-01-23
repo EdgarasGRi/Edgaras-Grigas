@@ -1,0 +1,29 @@
+body{
+	
+}
+
+#result{
+	padding:15px;
+	border:1px solid #aaa;
+}
+
+.container{
+	background:#fff;
+}
+
+#app{
+	padding:15px;
+}
+
+.top-pad{
+	margin-top:50px;
+}
+
+.result-position{
+	padding-top: 30px;
+}
+
+.stilius{
+	border: 1px	solid black;
+	border-radius: 5px;
+}

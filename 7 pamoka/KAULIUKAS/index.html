@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scientists</title>
+    
+  <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <script>
+       var array = [];
+
+       var btn_add = document.getElementById("add");
+
+     
+
+        function CalcResult() {
+            var numeris = document.getElementById("Number").value;
+
+            var x = Math.floor((Math.random() * 6) + 1);
+            document.getElementById("ats").value;
+          
+
+            if(numeris == x){
+                document.getElementById("ats").value = x + " sveikiname jus atspejote skaiciu"  ;
+            }else{
+                document.getElementById("ats").value = " Blogai skaicius buvo" + " " + x ;
+            }
+
+            array.push(x);
+            addlist(array);
+            
+    }
+
+    function addlist(y){
+        h = " ";
+        h = " ";
+        for(var i = 0; i < y.length; i++){
+		//console.log(x[i]);
+		h = h + " " + y[i]  +"<br>";
+    }
+        h = h + " ";
+        document.getElementById("result").innerHTML = h;
+    }
+
+    
+    
+
+    </script>
+</head>
+
+<body>
+    <div class = "container">
+    <div class = "app">
+        <div class = "row">
+    
+        <div class="col-lg-4">
+            Iveskite norima skaiciu:
+            <input type="text" name="number" class="form-control" id="Number"  placeholder="Iveskite numery">
+            <button type="button"  id="add" onclick="CalcResult()" class="btn btn-primary btn-md">Roil</button>
+        </div>
+        <div class="col-lg-4">
+            Atsakymas:
+            
+            <input type="text"  class="form-control" id="ats"  placeholder="Iveskite numery">
+            
+        </div>
+            
+        <div class="col-lg-4">
+            Laimingi skaiciai:
+            <div id= "result">
+            
+            </div>
+        </div> 
+            
+        </div>
+   
+    </div>
+    </div>  
+             
+   
+
+    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
