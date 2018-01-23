@@ -1,6 +1,6 @@
 body{
     background:url("../img/zalgiris.jpg");
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -16,6 +16,8 @@ body{
     height: 900px;
     margin-top: 20px;
     border-radius: 10px;
+    background-color: white;
+    opacity: 0.9;
     
 }
     
@@ -58,7 +60,7 @@ body{
 }
 
 .navbar-right{
-    padding-top: 25px;
+    padding-top: 10px;
 }
 .bord{
     border: 2px solid white;
@@ -123,3 +125,27 @@ h3{
 
 }
 
+.table-bordered{
+    color:#2a2d2b;
+    font-family: 'Courgette', cursive;
+    font-size:25px;
+   
+    max-width: 50px;
+    text-align:left; 
+}
+
+.btn-active{
+    color: white;
+    font-family: 'Courgette', cursive;
+    font-size:25px;
+}
+
+#footer{
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    
+}
