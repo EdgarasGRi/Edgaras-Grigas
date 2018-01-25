@@ -1,0 +1,68 @@
+
+body{
+	background:url('../img/fonas.png');
+}
+
+.stilius{
+    background:#fff;
+	padding:15px;
+}
+
+.Scrol_bt{
+	width: 100px;
+	background-color: orange;
+	text-align: center;
+	margin-top: 10px;
+	
+}
+
+.button{
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+		
+}
+
+.Scroll{
+	position: relative;
+
+
+}
+
+.cont_bd{
+	background: white;
+	margin-top: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	position: relative;
+
+}
+
+h1{
+	border-bottom: 1px solid black;
+	margin-bottom: 20px;
+}
+
+.linkai{
+	padding-top: 10px;
+}
+
+.kvadratas{
+	background: red;
+	width: 400px;
+	height: 200px;
+	margin-top: 100px;
+	position: relative;
+	text-align: center;
+}
+
+.cirkle{
+	background: yellow;
+	width: 170px;
+	height: 100px;
+	position: absolute;
+	right: -60px;
+    bottom: 139px;
+	border-radius: 80%;
+}
