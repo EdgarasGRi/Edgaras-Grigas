@@ -1,6 +1,11 @@
 
 body{
 	background:url('../img/fonas.png');
+	position:relative;
+}
+
+#jquery_basic{
+	position:relative;
 }
 
 .stilius{
@@ -8,7 +13,7 @@ body{
 	padding:15px;
 }
 
-.Scrol_bt{
+.Scroll_counter{
 	width: 100px;
 	background-color: orange;
 	text-align: center;
@@ -16,18 +21,11 @@ body{
 	
 }
 
-.button{
-	text-align: center;
-	position: fixed;
-	top: 0;
-	width: 100%;
-		
-}
-
 .Scroll{
-	position: relative;
-
-
+	position:fixed;
+	top:0px;
+	left:0;
+	right:0;
 }
 
 .cont_bd{
@@ -35,7 +33,7 @@ body{
 	margin-top: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	position: relative;
+	
 
 }
 
