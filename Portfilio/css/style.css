@@ -1,6 +1,9 @@
 body{
 	position:relative;
 }
+.Pagr{
+	position:relative;
+}
 
 .navbar-nav {
 	float: right;
@@ -12,13 +15,12 @@ body{
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .navbar-inverse{
-	position: relative;
+	position: fixed;
 	border-bottom: 2px solid white;
 }                
 
-
-.meniu{
-	position: relative;
+.stilius{
+	margin-top:75px;
 }
 
 .navbar-brand{
