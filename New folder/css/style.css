@@ -2,6 +2,19 @@
 .navbar-inverse{
 	position:relative;
 }
+.navbar-right{
+	display: inline-block;
+	
+	
+}
+.navbar-brand{
+	font-size: 25px;
+}
+
+.container-fluid{
+	padding-top: 10px;
+	
+}
 
 .stilius{
 	background: grey;
@@ -9,8 +22,13 @@
 	width: 260px;
 	border-radius: 10px;
 	position: absolute;
-	margin-left: 960px;
-	top: -36px;
+	margin-left:-194px;
+	margin-top:12px;
+	display: none;
+	
+	
+	
+
 }
 
 .fa-shopping-cart{
@@ -29,12 +47,12 @@
 .Btn1{
 	width: 110px;
 	height: 30px;
-	
-	
 }
 
 .login{
 	width: 100%;
+
+	display: inline-block;
 }
 
 .reg{
@@ -50,7 +68,61 @@ a:hover{
 	text-decoration: none;
 }
 
-.container{
-	position:absolute;
-	width: 111px;
+.fa-user{
+	color:white;
+	font-size: 40px;
+	margin-left:15px;
+	position: relative;
+	
+	
+}
+
+ p{
+	color:white;
+	font-size: 15px;
+	margin-right: 10px;
+	margin-left: 5px;
+	
+}
+
+login1{
+	display: inline-block;
+}
+
+h4{
+	font-size: 10px;
+	color: white;
+}
+
+.fa-shopping-cart{
+	color:white;
+	font-size: 40px;
+	margin-left: 15px;
+	
+
+}
+
+.fa-shopping-cart{
+	margin-right: 0px;
+}
+
+.fa-search{
+	color:white;
+	font-size: 40px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+.form-control{
+	display:none;
+	
+}
+.rigth-meniu{
+	display: inline-block;
+	position: relative;
+	float: right;
+}
+
+.loginas{
+	display: inline-block;
+	margin-right: 20px
 }
