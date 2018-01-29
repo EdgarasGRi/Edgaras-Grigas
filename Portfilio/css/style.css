@@ -179,6 +179,7 @@ body{
 	width: 0;
 	height: 100%;
 	transition: .5s ease;
+	border-radius:15px;
   }
 
 .text {
@@ -190,6 +191,7 @@ body{
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	white-space: nowrap;
+	
   }
 
 .text a{
@@ -204,14 +206,35 @@ body{
 }
 
 .form1{
-	border:1px solid black;
-	width: 400px;
-	height: 200px;
-	background: white;
+	border:3px solid #008CBA;
+	width: 600px;
+	height: 300px;
+	background:  #222222;
 	margin-left:67px;
 	display:none;
 	position: absolute;
 	border-radius:15px;
+	margin-top: 3px;
+	
+	
+}
+
+.form1 p {
+	text-align: center;
+	font-family: 'Kurale', serif;
+	color: white;
+	font-size: 25px;
+	position: relative;
+}
+
+.form1 li {
+	font-family: 'Kurale', serif;
+	color: white;
+	font-size: 20px;
+}
+
+.form1 li ul {
+	padding-top: 10px;
 }
 
 .Edc{
@@ -219,8 +242,10 @@ body{
 }
 
 .cancelbtn {
-    width: auto;
-    
+	width: auto;
+	margin-left: 560px;
+	margin-top: 10px;
 	background-color: #f44336;
-	border-radius:15px;
+	border-radius:10px;
+	
 }
