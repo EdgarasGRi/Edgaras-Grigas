@@ -1,21 +1,17 @@
 $(document).ready(function(){
-    $(".fa-user").mouseenter(function(){
-        $(".stilius").show("faster");
+    $(".loginas").mouseenter(function(){
+        $(".stilius").stop().slideDown(1000);
         $(".fa-user").css("color", "red");
     })
 
-  
-    
-    
-
-    $(".stilius").mouseleave(function(){
-        $(".stilius").slideUp("slow");
+    $(".loginas").mouseleave(function(){
+        $(".stilius").stop().slideUp(1000);
         $(".fa-user").css("color", "white");
        
     }); 
     
     $(".fa-search").mouseenter(function(){
-        $(".form-control").slideDown();
+        $(".form-control").stop().slideDown(1000);
         $(".fa-search").css("color", "red");
     });
    
