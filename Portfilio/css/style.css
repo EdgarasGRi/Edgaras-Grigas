@@ -122,20 +122,6 @@ body{
 }
 
 
-.fa-facebook{
-	position: absolute;
-	font-size: 40px;
-	left: 27px;
-	top: 10px;
-	padding: 10px;
-	padding-bottom: 5px;
-	border: 1px solid #008CBA;
-	color:white;
-	background: #008CBA;
-	border-radius:15px;
-	
-}
-
 .fa-address-card-o{
 	color:#008CBA;
 }
