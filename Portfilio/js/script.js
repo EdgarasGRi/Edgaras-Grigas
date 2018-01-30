@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(".Edc").click(function(){
-        $(".form1").slideDown("slow");
+        $(".form1").show("slow");
     })
 
     $(".cancelbtn").click(function(){
