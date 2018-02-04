@@ -1,10 +1,17 @@
 
-//tuscias masyvas alsbuamns
-album = [];
+// Gauname albumus iš localStorage ir sukuriame objektą
+let AlbumJSON = localStorage.getItem("album");
+let album = JSON.parse(AlbumJSON);
+
+if (album === null) {
+    album = [];
+}
+
 
 
 
 //Gauti visu grupiu rezultatus paspaudus mygtuka
+let formelement = document.getElementById("formmusic");
 let txt_Atlikejas = document.getElementById("Atlikejas");
 let txt_Albumas = document.getElementById("Albumas");
 let txt_Metai = document.getElementById("Metai");
@@ -14,6 +21,10 @@ let txt_Kaina = document.getElementById("Kaina");
 //TODO apsirasyti mygtuka
 let btn_submit = document.getElementById("Register");
 btn_submit.addEventListener("click", addAlbum);
+
+let link_clear = document.getElementById("link_clear");
+link_clear.addEventListener("click", clearForm);
+
 
 //sukuariam funkcija  kuris bus vygdoma paspaudus mygtukui
 function addAlbum() {
@@ -33,6 +44,13 @@ function addAlbum() {
 	};
 
 	album.push(c);
+	
+	//Issaugom i atminti local storage
+	let AlbumJSON = JSON.stringify(album);
+	localStorage.setItem("album",AlbumJSON);
+
+
+
 
 	Array_Album(album);
 	console.log(album.length);
@@ -60,3 +78,7 @@ function  Array_Album (x) {
 	document.getElementById("result").innerHTML = res;
 }
 
+//sukuriam funkcija, kuri isvalytu forma
+function clearForm(){
+	formelement.reset();
+}
