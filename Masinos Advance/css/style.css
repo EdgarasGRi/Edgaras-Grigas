@@ -1,0 +1,30 @@
+h1{
+    font-family: 'Swanky and Moo Moo', cursive;
+    font-size: 60px;
+}
+
+#Brand{
+    margin-right: 1px;
+}
+
+.form-inline{
+    margin-left: 20px;
+}
+
+#btn_search{
+    margin-top: 20px;
+}
+
+.is-invalid{
+	border-color:red;
+	background:pink;
+}
+
+.error_msg{
+	color:red;
+	font-style:italic;
+}
+
+.carImg{
+    width: 300px;
+}

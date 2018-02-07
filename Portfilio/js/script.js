@@ -2,6 +2,9 @@
    $(document).ready(function(){
     $(".Edc").click(function(){
         $(".form1").slideDown("slow");
+        $(".form2").hide("slow");
+        $(".form3").hide("slow");
+
     })
 
     $(".cancelbtn").click(function(){
@@ -10,6 +13,9 @@
 
     $(".Skills").click(function(){
         $(".form2").slideDown("slow");
+        $(".form1").hide("slow");
+        $(".form3").hide("slow");
+       
     })
 
     $(".cancelbtn2").click(function(){
@@ -18,6 +24,8 @@
 
     $(".Hobb").click(function(){
         $(".form3").slideDown("slow");
+        $(".form2").hide("slow");
+        $(".form1").hide("slow");
     })
 
     $(".cancelbtn3").click(function(){

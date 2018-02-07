@@ -1,0 +1,34 @@
+header{
+	background:url('../img/ground.png') left;
+	padding-top:30px;
+	color:#fff;
+	padding-bottom:30px;
+}
+
+.form-control{
+    width: 120px;
+   
+}
+
+.pav{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.pav1{
+    margin-top: 15px;
+    
+}
+
+.btn-default{
+    margin-left: 15px;
+}
+
+.brandImg img{
+	max-width:200px;
+}
+
+.pav2{
+    margin-top: 15px;
+}
+
