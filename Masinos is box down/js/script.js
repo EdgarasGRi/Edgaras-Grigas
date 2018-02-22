@@ -63,6 +63,5 @@ function showNewest(a){
 			newestCar = a[i];
 		}
 	}
-	
-	$(".result1").html(PrintCars(newestCar));
+	$(".TopAtr").html(PrintCars(newestCar));
 }

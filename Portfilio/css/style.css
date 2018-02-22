@@ -1,8 +1,14 @@
 body{
 	position:relative;
 }
+
 .Pagr{
 	position:relative;
+}
+
+.container-fluid{
+	width: 100%;
+	
 }
 
 .navbar-nav {
@@ -147,8 +153,7 @@ body{
 	 padding-top: 60px;
 	 font-size:30px;
 	 margin-top:20px;
-	
-	margin-left:67px;
+	 margin-left:20px; 
  }
 
 .stilius1:hover .overlay {
@@ -225,13 +230,14 @@ body{
 	font-family: 'Bungee Inline', cursive;
 	color: black;
 	text-align: center;
-	font-size: 30px;
+	font-size: 19px;
 	margin-top: 20px;
 }
 
 .stilius3 {
 	width: 100%;
 	height: 300px;
+	margin-top: 20px;
 	
 }
  .Edc:hover{
@@ -297,6 +303,7 @@ body{
 .form2{
 	display:none;
 	border-bottom: 1px solid black;
+	
 }
 
 
@@ -332,7 +339,7 @@ body{
 
 #Contact{
 	width: 100%;
-	height:550px;
+	height:500px;
 	background:  #222222;
 	border-bottom: 1px solid white;
 }
@@ -367,14 +374,16 @@ body{
 	box-shadow: 0px 0px 10px rgb(255, 255, 255);
 }
 .btn-default1{
-	color:white;
-    background-color: #222222;
+	color:black;
+    background-color:white;
 	border-color: #ccc;
-	border: 2px solid white;
-	margin-left:250px;
+	border: 2px solid black;
+
 	width: 300px;
+	margin-top: 15px;
 	box-shadow: 0px 0px 10px rgb(255, 255, 255);
 	border-radius: 15px;
+	font-family: 'Bungee Inline', cursive;
 }
 
 .btn-default1:hover{
@@ -597,9 +606,13 @@ textarea.form-control{
 	width: 100%;
 	height: 60px;
 	padding-top: 10px;
-	
-}
+	position: fixed;
+   	left: 0;
+   	bottom: 0;
+	border-top: 1px solid white;
+	z-index: 1;
 
+}
 
 .btn-circle.btn-lg {
 	width: 40px;
@@ -609,3 +622,26 @@ textarea.form-control{
 	line-height: 1.33;
 	border-radius: 25px;
   }
+
+  .stilius3 span{
+	margin-left: 620px;
+    margin-top: 20px;
+    font-size: 30px;
+    color: black;
+    font-family: 'Bungee Inline', cursive;
+  }
+
+  .form-group{
+	  margin-top:0px;
+  }
+
+  .name2 p{
+	  color: white;
+	  font-family: 'Bungee Inline', cursive;
+  }
+
+  .mail p{
+	color: white;
+	font-family: 'Bungee Inline', cursive;
+  }
+  
